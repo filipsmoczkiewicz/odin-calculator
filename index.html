@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>The Odin Project Calculator</title>
 </head>
+
 <body>
     <div class="header">
         <h1>Calculator for the Odin Project</h1>
@@ -14,34 +15,45 @@
     </div>
     <main>
         <div class="calculatorWindow">
-            <div class="display" id="display">0</div>
+            <div class="display">
+                <div id="lastOperationScreen"></div>
+                <div id="currentOperationScreen"></div>
+            </div>
+
             <div class="buttons-grid">
-                <button class="btn">C</button>
-                <button class="btn">AC</button>
-                <button class="btn">%</button>
-                <button class="btn">/</button>
+                <button class="btn" id="clearBtn">AC</button>
+                <button class="btn" id="deleteBtn">C</button>
+                <button class="btn" id="percentageBtn">%</button>
+                <button class="btn operator-btn" data-operator>÷</button>
 
-                <button class="btn">7</button>
-                <button class="btn">8</button>
-                <button class="btn">9</button>
-                <button class="btn">x</button>
+                <button class="btn" data-number>7</button>
+                <button class="btn" data-number>8</button>
+                <button class="btn" data-number>9</button>
+                <button class="btn operator-btn" data-operator>×</button>
 
-                <button class="btn">4</button>
-                <button class="btn">5</button>
-                <button class="btn">6</button>
-                <button class="btn">-</button>
+                <button class="btn" data-number>4</button>
+                <button class="btn" data-number>5</button>
+                <button class="btn" data-number>6</button>
+                <button class="btn operator-btn" data-operator>-</button>
 
-                <button class="btn">1</button>
-                <button class="btn">2</button>
-                <button class="btn">3</button>
-                <button class="btn">+</button>
+                <button class="btn" data-number>1</button>
+                <button class="btn" data-number>2</button>
+                <button class="btn" data-number>3</button>
+                <button class="btn operator-btn" data-operator>+</button>
 
-                <button class="big-btn">0</button>
-                <button class="btn">,</button>
-                <button class="btn">=</button>
+                <button class="btn big-btn" data-number>0</button>
+                <button class="btn" id="pointBtn">.</button>
+                <button class="btn" id="equalsBtn">=</button>
+                <script src="script.js"></script>
             </div>
         </div>
     </main>
-
+    <footer class="footer">
+        <p>Created by
+            <a class="footer-link" href="https://github.com/filipsmoczkiewicz">Filip Smoczkiewicz</a> | <a
+                class="footer-link" href="https://github.com/filipsmoczkiewicz/odin-calculator">Source</a>
+        </p>
+    </footer>
 </body>
+
 </html>
